@@ -92,6 +92,7 @@
 .about {
     // background-color: aqua;
     @include grid(normal, start);
+    gap: px(20);
     @include breakpoint(tablet) {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -99,6 +100,8 @@
         position: relative;
 
         img {
+            box-shadow: px(-10) px(-10) $colour1;
+
             margin: px(40) 0;
             width: px(378);
             height: px(378);
@@ -120,6 +123,7 @@
     // }
     &__copy {
         h2 {
+            margin-left: px(25);
             font-size: px(16);
             position: relative;
             margin-top: 0;
