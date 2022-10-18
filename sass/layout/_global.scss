@@ -1,0 +1,62 @@
+@use "../modules" as *;
+
+.hidden {
+    display: none;
+}
+
+.headline {
+    font-weight: weight(medium);
+    text-align: center;
+    p,
+    h2 {
+        text-align: center;
+    }
+
+    color: $colour-darkest;
+    p {
+        font-size: px(14);
+    }
+    h2 {
+        margin-bottom: px(30);
+    }
+}
+
+.btn {
+    font-size: px(12);
+    color: white !important;
+    font-weight: weight(bold);
+    cursor: pointer;
+    border: 0;
+    background-color: $colour1;
+    padding: px(10) px(34);
+    border-radius: px(5);
+    transition: background-color 0.5s ease-in-out;
+    // transition: color 300ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: $colour2;
+}
+
+.sql-btn {
+    transition: background-color 0.5s ease-in-out;
+    border: 0;
+    color: $colour-darkest;
+    border-radius: px(5);
+    cursor: pointer;
+    font-weight: weight(medium);
+    font-size: px(16);
+    padding: px(10) 0;
+    background-color: $colour-footerfont;
+    box-shadow: 0 8px 15px 0 rgba(#000000, 0.2);
+    @include transitionEase;
+}
+.sql-btn:hover {
+    color: $colour-headerline;
+}
+
+.selected {
+    box-shadow: 0 8px 15px 0 rgba($colour1, 0.2);
+    background-color: $colour1;
+    color: $colour-white;
+}
