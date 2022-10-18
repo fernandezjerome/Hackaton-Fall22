@@ -1,2 +1,1 @@
-# Hackaton-Fall22
-Hackataon
+# my-sass-template

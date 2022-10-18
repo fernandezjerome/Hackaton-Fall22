@@ -1,0 +1,38 @@
+{
+    "first": {
+        "img": "travelling.jpg",
+        "alt": "traveling",
+        "title": "Tavelling",
+        "info1": "info1",
+        "info2": "info2",
+        "info3": "info3",
+        "content": "One of my favourite things to do is travel around the world. It's crazy to think that we have 7,100 islands and only a few. The plan is hopefully soon after graduation, I can work online while travelling with the family to sustain my financial needs but it's too good to be true I think :D."
+    },
+    "second": {
+        "img": "movies.jpg",
+        "alt": "movies",
+        "title": "Waching Movies",
+        "info1": "ssinfo1",
+        "info2": "ssinfo2",
+        "info3": "ssinfo3",
+        "content": "I love watching movies and TV series in my leisure time. Back in my days, I have this complication of movies and TV series on my portable hard drives but not thanks to Netflix and other platforms you don't need to download anymore."
+    },
+    "third": {
+        "img": "games.jpg",
+        "alt": "online games",
+        "title": "Online games",
+        "info1": "bbbinfo1",
+        "info2": "bbbinfo2",
+        "info3": "bbbinfo3",
+        "content": "Before, I use to be a professional gamer. I join tournaments like starcraft and warcraft. But now, I like playing with my friends casually online."
+    },
+    "fourth": {
+        "img": "fourth.jpg",
+        "alt": "online games",
+        "title": "Titel 4",
+        "info1": "ddddinfo1",
+        "info2": "ddddinfo2",
+        "info3": "dddinfo3",
+        "content": "Before, I use to be a professional gamer. I join tournaments like starcraft and warcraft. But now, I like playing with my friends casually online."
+    }
+}
