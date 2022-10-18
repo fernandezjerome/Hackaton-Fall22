@@ -41,7 +41,7 @@
 
     // grid 1 switch grid with burder and tablet and mobile
     &__logo {
-        width: px(145);
+        width: px(160);
         grid-area: 1 / 2 / 2 / 3;
         @include breakpoint(desktop) {
             grid-area: 1 / 1 / 2 / 2;
