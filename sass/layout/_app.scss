@@ -1,0 +1,55 @@
+@use "../modules" as *;
+
+.download-bg {
+    background-color: $colour-whitegray;
+}
+
+.download {
+    h2 {
+        margin-top: px(100);
+        font-size: px(14);
+    }
+    h3 {
+        font-size: px(35);
+        // margin-bottom: px(10);
+    }
+    p {
+        font-size: px(13);
+        margin-top: px(10);
+    }
+    // padding: px(30) 0;
+    @include grid(normal, start);
+    // gap: px(20);
+    // row-gap: px(20);
+    column-gap: px(20);
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__app {
+        p {
+            margin-top: px(20);
+            font-weight: weight(bold);
+            font-size: px(20);
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: px(20);
+
+        img {
+            width: px(160);
+        }
+    }
+    &__prod {
+        text-align: center;
+        img {
+            width: 100%;
+            height: 523px;
+            object-fit: cover;
+            object-position: right;
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
+        }
+    }
+}

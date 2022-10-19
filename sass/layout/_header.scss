@@ -1,0 +1,187 @@
+@use "../modules" as *;
+
+@mixin burgerDash($position, $width, $top) {
+    content: "";
+    top: $top;
+    position: $position;
+    width: $width;
+    height: px(3);
+    background-color: $colour-darkest;
+    @include transitionEase;
+}
+
+@mixin rotate($degree) {
+    top: 0;
+    width: px(28);
+    transform: rotate($degree);
+}
+
+.head-colour {
+    background-color: $colour-whitegray;
+    border-bottom: 1px solid $colour-headerline;
+}
+// main grid
+.header {
+    &__nav {
+        display: grid;
+        margin-inline: auto;
+        align-items: center;
+        grid-template-columns: 0.1fr 2fr 0.1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        width: min(100%, px(1000));
+        // width: min(100% - px(20), px(1000));
+        padding: px(24);
+        @include breakpoint(tablet) {
+        }
+        @include breakpoint(desktop) {
+            grid-template-columns: 0.5fr 2fr 0.5fr;
+        }
+    }
+
+    // grid 1 switch grid with burder and tablet and mobile
+    &__logo {
+        width: px(160);
+        grid-area: 1 / 2 / 2 / 3;
+        @include breakpoint(desktop) {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    }
+
+    // grid 2 hidden in desttop
+    &__burger {
+        div {
+            position: absolute;
+            // background-color: aquamarine;
+            top: px(-50);
+            left: px(-30);
+            width: px(100);
+            height: px(90);
+        }
+        grid-area: 1 / 1 / 2 / 2;
+        @include burgerDash(relative, px(28), 0);
+
+        &::before {
+            @include burgerDash(absolute, px(20), px(8));
+        }
+        &::after {
+            @include burgerDash(absolute, px(28), px(-8));
+        }
+
+        @include breakpoint(desktop) {
+            display: none;
+        }
+        &.open {
+            background: transparent;
+            &::before {
+                @include rotate(45deg);
+            }
+            &::after {
+                @include rotate(-45deg);
+            }
+        }
+    }
+
+    // grid 3 hidden in tablet and mobile
+    &__links {
+        display: none;
+        a {
+            position: relative;
+
+            @include transitionEase;
+
+            &:not(:last-child) {
+                margin-right: px(20);
+            }
+            &::before {
+                // @include before;
+                content: "";
+                display: block;
+                position: absolute;
+                height: px(4);
+                left: 0;
+                right: 0;
+                bottom: px(-30);
+                background: $colour1;
+                @include transitionEase;
+                opacity: 0;
+            }
+            &:hover {
+                color: $colour1;
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+        @include breakpoint(desktop) {
+            display: block;
+            grid-area: 1 / 2 / 2 / 3;
+        }
+    }
+    // grid 4
+    &__btn {
+        display: none;
+        @include breakpoint(desktop) {
+            display: block;
+        }
+    }
+    &__qoute {
+        font-size: px(25);
+        color: $colour1;
+        cursor: pointer;
+        &:hover {
+            color: $colour2;
+            @include transitionEase;
+        }
+
+        @include breakpoint(desktop) {
+            display: none;
+        }
+    }
+}
+
+#sidenav {
+    z-index: 3;
+    font-size: px(30);
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    top: px(81);
+    left: -40vh;
+    height: 60vh;
+    width: 40vh;
+    overflow: hidden;
+    background-color: $colour1;
+    padding-right: px(16);
+    a {
+        color: $colour-whitegray;
+        padding: px(10);
+        &:not(:last-child) {
+            margin-bottom: px(40);
+        }
+        &::after {
+            content: "";
+            display: block;
+            height: px(3);
+            bottom: px(-5);
+            background: $colour-white;
+            @include transitionEase;
+            opacity: 0;
+        }
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include transitionEase;
+    @include breakpoint(desktop) {
+        display: none;
+    }
+}
+.nav-slide {
+    transform: translate(40vh);
+}

@@ -1,0 +1,38 @@
+{
+    "first": {
+        "img": "travelling.jpg",
+        "alt": "thermo control",
+        "product_name": "Thermo Control",
+        "product_price": "$299",
+        "colours": "<span>Colours:</span> Starlite White, Space Grey",
+        "info3": "Smart-Technology",
+        "product_desc": "Control the temperature of your home from your device from anywhere in the world! Stay on top of your home/s well-being, even while you/re away, by being alerted to events like sudden temperature drops or spikes that could cause damage to your home. Create a schedule. Control from anywhere from a smartphone, tablet or Apple Watch."
+    },
+    "second": {
+        "img": "movies.jpg",
+        "alt": "dorbell camera",
+        "product_name": "Doorbell Camera",
+        "product_price": "$249",
+        "colours": "<span>Colours:</span> Charcoal Black, Space Grey",
+        "info3": "ssinfo3",
+        "product_desc": "Leave your worries at the door. Greet visitors from your handheld device, whether you're home or not."
+    },
+    "third": {
+        "img": "games.jpg",
+        "alt": "keyless lock/unlock",
+        "product_name": "Keyless Lock/Unlock",
+        "product_price": "$199",
+        "colours": "<span>Colours:</span> Starlite White, Charcoal Black",
+        "info3": "Switch warm and cold smoothly.",
+        "product_desc": "With the ThermoSecurity lock installed on your doors, you will be able to wirelessly lock and unlock your doors from your wireless devices, without the need for a key."
+    },
+    "fourth": {
+        "img": "fourth.jpg",
+        "alt": "smoke detector",
+        "product_name": "Smoke/Monoxide Detector",
+        "product_price": "$159",
+        "colours": "<span>Colours:</span> Starlite White,Space Grey",
+        "info3": "Motion-detector",
+        "product_desc": "Tells you where danger is. Tells you your CO levels. Alerts you if there is danger."
+    }
+}
