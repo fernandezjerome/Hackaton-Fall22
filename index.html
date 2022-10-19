@@ -271,59 +271,61 @@
                 </div>
             </section>
 
-            <section class="form">
-                <div class="contact-img">
-                    <img src="images/contact-img.jpg" alt="" />
-                </div>
-                <div class="form__input">
-                    <form
-                        id="contact-form"
-                        method="POST"
-                        action="processForm.php"
-                        name="ContactForm"
-                    >
-                        <h2>Send your mes</h2>
+            <section class="form-bg">
+                <div class="form form-bg">
+                    <div class="contact__img">
+                        <img src="images/contact-img.jpg" alt="" />
+                    </div>
+                    <div class="form__input">
+                        <form
+                            id="contact-form"
+                            method="POST"
+                            action="processForm.php"
+                            name="ContactForm"
+                        >
+                            <h2>Send your message</h2>
 
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="What's this about?"
-                            style="color: rgb(51, 51, 51)"
-                            onfocus="if (this.value == '90') {this.value=''; this.style.color='#10054d';}"
-                            required
-                            tabindex="1"
-                        />
-                        <textarea name="message" id="message" tabindex="2">
-                        </textarea>
-                        <input
-                            type="text"
-                            id="name2"
-                            name="name2"
-                            placeholder="First and last name"
-                            style="color: rgb(51, 51, 51)"
-                            onfocus="if (this.value == '90') {this.value=''; this.style.color='#10054d';}"
-                            required
-                            tabindex="3"
-                        />
-                        <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            style="color: rgb(51, 51, 51)"
-                            placeholder="yourname@domain.com"
-                            required
-                            tabindex="4"
-                        />
-                        <input
-                            class="btn"
-                            name="submit"
-                            type="submit"
-                            id="submit"
-                            tabindex="5"
-                            value="Submit"
-                        />
-                    </form>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="What's this about?"
+                                style="color: rgb(51, 51, 51)"
+                                onfocus="if (this.value == '90') {this.value=''; this.style.color='#10054d';}"
+                                required
+                                tabindex="1"
+                            />
+                            <textarea name="message" id="message" tabindex="2">
+                            </textarea>
+                            <input
+                                type="text"
+                                id="name2"
+                                name="name2"
+                                placeholder="First and last name"
+                                style="color: rgb(51, 51, 51)"
+                                onfocus="if (this.value == '90') {this.value=''; this.style.color='#10054d';}"
+                                required
+                                tabindex="3"
+                            />
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                style="color: rgb(51, 51, 51)"
+                                placeholder="yourname@email.com"
+                                required
+                                tabindex="4"
+                            />
+                            <input
+                                class="btn"
+                                name="submit"
+                                type="submit"
+                                id="submit"
+                                tabindex="5"
+                                value="Submit"
+                            />
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>

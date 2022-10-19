@@ -222,6 +222,9 @@
     }
 }
 
+.form-bg {
+    background-color: $colour-whitegray;
+}
 .form {
     img {
         height: 400px;
@@ -234,11 +237,21 @@
         margin-bottom: px(0);
         grid-template-columns: repeat(2, 1fr);
     }
+    &__input {
+        h2 {
+            font-size: px(25);
+            font-weight: weight(medium);
+            margin-bottom: px(10);
+        }
+        padding: px(30);
+        border-radius: px(12);
+        background-color: white;
+        display: flex;
+    }
     input[type="text"] {
         display: inline;
         border: 0;
-
-        width: 390px;
+        width: 100%;
         font-size: 14px;
         background-color: #eff3ff;
         font-family: "Lato";
@@ -251,22 +264,18 @@
 
     textarea {
         display: inline;
-        width: 390px;
-        max-width: 390px;
+        width: 100%;
         height: 100px;
         max-height: 300px;
         font-size: 14px;
         background-color: #eff3ff;
-        // color: rgb(51, 51, 51);
         padding: 5px 0px 5px 10px;
         margin: 5px 0px 0px 0px;
         border-radius: 3px;
-        -moz-border-radius: 5px;
     }
-    &__input {
-        text-align: center;
-    }
+
     #submit {
-        padding: px(10) px(80);
+        margin-top: 2rem;
+        padding: px(10) px(60);
     }
 }
