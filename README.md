@@ -1,2 +1,2 @@
-# Hackaton-Fall22
-Hackataon
+# Hackathon-Fall22
+Hackathon
