@@ -37,16 +37,16 @@ function makeInfo(data) {
     // console.log(data);
 
     (ajaxContent.innerHTML = `
-    <h3 class="info__title">${data.title}</h3>
-    <p class="info__content">${data.content}</p>
+    <h3 class="info__title">${data.product_name}</h3>
+    <p class="info__content">${data.product_desc}</p>
   
     <div class="sql__appoved">
     <img src="images/check-icon.svg" alt="appoved icon"/>
-    <p class="info__content">${data.info1}</p></div>
+    <p class="info__content">${data.product_price}</p></div>
   
     <div class="sql__appoved">
     <img src="images/check-icon.svg" alt="appoved icon"/>
-    <p class="info__content">${data.info2}</p></div>
+    <p class="info__content">${data.colours}</p></div>
   
     <div class="sql__appoved">
     <img src="images/check-icon.svg" alt="appoved icon"/>
