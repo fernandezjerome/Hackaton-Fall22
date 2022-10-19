@@ -1,4 +1,7 @@
-# Hackathon-Fall22
+# Hackathon
+## Industrial Design and Promotion
+## HouseCom™ ThermoSecurity™ System
+
 # About
 This is a Home Security Company Mockup for our 4 members; Hayden Burnell, Amr Shoeib, Jerome Fernandez, and Pawan Pandeya.
 
