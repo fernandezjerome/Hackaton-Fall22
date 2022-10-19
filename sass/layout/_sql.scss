@@ -5,6 +5,10 @@
     @include grid(normal, start);
 
     .intro__buttons {
+        button {
+            padding: px(22) 0;
+        }
+
         @include grid(normal, start);
         grid-template-columns: 1fr 1fr;
         width: min(100%, px(1000));
@@ -19,8 +23,11 @@
 
             margin-left: px(10);
             height: px(420);
-            width: 85%;
+            width: 100%;
             object-fit: cover;
+            @include breakpoint(desktop) {
+                width: 85%;
+            }
         }
     }
     &__info {

@@ -221,3 +221,52 @@
         gap: 40px;
     }
 }
+
+.form {
+    img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    @include grid(normal, start);
+    gap: px(20);
+    @include breakpoint(tablet) {
+        margin-bottom: px(0);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        display: inline;
+        border: 0;
+
+        width: 390px;
+        font-size: 14px;
+        background-color: #eff3ff;
+        font-family: "Lato";
+        color: white;
+        padding: 15px 0px 15px 10px;
+        margin: 5px 0px 5px 0px;
+        border-radius: 10px;
+        -moz-border-radius: 5px;
+    }
+
+    textarea {
+        display: inline;
+        width: 390px;
+        max-width: 390px;
+        height: 100px;
+        max-height: 300px;
+        font-size: 14px;
+        background-color: #eff3ff;
+        // color: rgb(51, 51, 51);
+        padding: 5px 0px 5px 10px;
+        margin: 5px 0px 0px 0px;
+        border-radius: 3px;
+        -moz-border-radius: 5px;
+    }
+    &__input {
+        text-align: center;
+    }
+    #submit {
+        padding: px(10) px(80);
+    }
+}
