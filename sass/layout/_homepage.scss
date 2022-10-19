@@ -90,10 +90,12 @@
 }
 
 .about {
-    // background-color: aqua;
+    // background-color: aqua;\
+    margin-bottom: px(50);
     @include grid(normal, start);
     gap: px(20);
     @include breakpoint(tablet) {
+        margin-bottom: px(0);
         grid-template-columns: repeat(2, 1fr);
     }
     &__button {
@@ -168,5 +170,23 @@
         position: absolute;
         left: px(20);
         bottom: px(10);
+    }
+}
+
+.features {
+    h3 {
+    }
+    @include grid(normal, start);
+    grid-template-columns: repeat(2, 1fr);
+    gap: px(20);
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__cards {
+        background-color: $colour-whitegray;
+        text-align: center;
+        padding: px(35) px(20);
+        border-radius: 15px;
+        cursor: pointer;
     }
 }

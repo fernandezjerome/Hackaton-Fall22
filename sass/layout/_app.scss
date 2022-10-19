@@ -1,0 +1,31 @@
+@use "../modules" as *;
+
+.download-bg {
+    background-color: $colour-whitegray;
+}
+
+.download {
+    padding: px(30) 0;
+    @include grid(normal, start);
+    gap: px(20);
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__app {
+        display: flex;
+        gap: px(20);
+
+        img {
+            width: px(160);
+        }
+    }
+    &__prod {
+        text-align: center;
+        img {
+            width: 200px;
+            @include breakpoint(tablet) {
+                width: 300px;
+            }
+        }
+    }
+}
